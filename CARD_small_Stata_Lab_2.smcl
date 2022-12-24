@@ -1,0 +1,625 @@
+{smcl}
+{com}{sf}{ul off}{txt}{.-}
+      name:  {res}<unnamed>
+       {txt}log:  {res}C:\Users\bentleylab\Desktop\Exam\CARD_small.smcl
+  {txt}log type:  {res}smcl
+ {txt}opened on:  {res} 1 Dec 2022, 15:43:28
+{txt}
+{com}. 
+. use dataset
+{txt}
+{com}. 
+. 
+. set more off
+{txt}
+{com}. 
+. codebook
+
+{txt}{hline}
+{res}id{right:person identifier}
+{txt}{hline}
+
+{col 19}type:  numeric ({res}int{txt})
+
+{col 18}range:  [{res}10{txt},{res}5219{txt}]{col 55}units:  {res}1
+{col 10}{txt}unique values:  {res}1,013{col 51}{txt}missing .:  {res}0{txt}/{res}1,013
+
+{txt}{col 19}mean:{res}{col 26} 2541.92
+{txt}{col 15}std. dev:{res}{col 26} 1487.95
+
+{txt}{col 12}percentiles:{col 32}10%{col 42}25%{col 52}50%{col 62}75%{col 72}90%
+{res}{col 27}     501{col 37}    1243{col 47}    2514{col 57}    3756{col 67}    4683
+
+{txt}{hline}
+{res}nearc2{right:=1 if near 2 yr college, 1966}
+{txt}{hline}
+
+{col 19}type:  numeric ({res}byte{txt})
+
+{col 18}range:  [{res}0{txt},{res}1{txt}]{col 55}units:  {res}1
+{col 10}{txt}unique values:  {res}2{col 51}{txt}missing .:  {res}0{txt}/{res}1,013
+
+{txt}{col 13}tabulation:  Freq.  Value
+{col 21}{res}       561{col 33}0
+{col 21}       452{col 33}1
+
+{txt}{hline}
+{res}nearc4{right:=1 if near 4 yr college, 1966}
+{txt}{hline}
+
+{col 19}type:  numeric ({res}byte{txt})
+
+{col 18}range:  [{res}0{txt},{res}1{txt}]{col 55}units:  {res}1
+{col 10}{txt}unique values:  {res}2{col 51}{txt}missing .:  {res}0{txt}/{res}1,013
+
+{txt}{col 13}tabulation:  Freq.  Value
+{col 21}{res}       314{col 33}0
+{col 21}       699{col 33}1
+
+{txt}{hline}
+{res}educ{right:years of schooling, 1976}
+{txt}{hline}
+
+{col 19}type:  numeric ({res}byte{txt})
+
+{col 18}range:  [{res}2{txt},{res}18{txt}]{col 55}units:  {res}1
+{col 10}{txt}unique values:  {res}16{col 51}{txt}missing .:  {res}0{txt}/{res}1,013
+
+{txt}{col 19}mean:{res}{col 26} 13.2577
+{txt}{col 15}std. dev:{res}{col 26}   2.685
+
+{txt}{col 12}percentiles:{col 32}10%{col 42}25%{col 52}50%{col 62}75%{col 72}90%
+{res}{col 27}      10{col 37}      12{col 47}      12{col 57}      16{col 67}      17
+
+{txt}{hline}
+{res}age{right:in years}
+{txt}{hline}
+
+{col 19}type:  numeric ({res}byte{txt})
+
+{col 18}range:  [{res}24{txt},{res}34{txt}]{col 55}units:  {res}1
+{col 10}{txt}unique values:  {res}11{col 51}{txt}missing .:  {res}0{txt}/{res}1,013
+
+{txt}{col 19}mean:{res}{col 26} 28.0513
+{txt}{col 15}std. dev:{res}{col 26} 3.13266
+
+{txt}{col 12}percentiles:{col 32}10%{col 42}25%{col 52}50%{col 62}75%{col 72}90%
+{res}{col 27}      24{col 37}      25{col 47}      27{col 57}      31{col 67}      33
+
+{txt}{hline}
+{res}fatheduc{right:father's schooling}
+{txt}{hline}
+
+{col 19}type:  numeric ({res}byte{txt})
+
+{col 18}range:  [{res}0{txt},{res}18{txt}]{col 55}units:  {res}1
+{col 10}{txt}unique values:  {res}19{col 51}{txt}missing .:  {res}227{txt}/{res}1,013
+
+{txt}{col 19}mean:{res}{col 26} 10.0954
+{txt}{col 15}std. dev:{res}{col 26} 3.69435
+
+{txt}{col 12}percentiles:{col 32}10%{col 42}25%{col 52}50%{col 62}75%{col 72}90%
+{res}{col 27}       5{col 37}       8{col 47}      11{col 57}      12{col 67}      14
+
+{txt}{hline}
+{res}motheduc{right:mother's schooling}
+{txt}{hline}
+
+{col 19}type:  numeric ({res}byte{txt})
+
+{col 18}range:  [{res}0{txt},{res}18{txt}]{col 55}units:  {res}1
+{col 10}{txt}unique values:  {res}19{col 51}{txt}missing .:  {res}122{txt}/{res}1,013
+
+{txt}{col 19}mean:{res}{col 26} 10.4299
+{txt}{col 15}std. dev:{res}{col 26} 3.31126
+
+{txt}{col 12}percentiles:{col 32}10%{col 42}25%{col 52}50%{col 62}75%{col 72}90%
+{res}{col 27}       6{col 37}       8{col 47}      12{col 57}      12{col 67}      14
+
+{txt}{hline}
+{res}weight{right:NLS sampling weight, 1976}
+{txt}{hline}
+
+{col 19}type:  numeric ({res}float{txt})
+
+{col 18}range:  [{res}75607{txt},{res}1693822{txt}]{col 55}units:  {res}1
+{col 10}{txt}unique values:  {res}237{col 51}{txt}missing .:  {res}0{txt}/{res}1,013
+
+{txt}{col 19}mean:{res}{col 26}  315684
+{txt}{col 15}std. dev:{res}{col 26}  169496
+
+{txt}{col 12}percentiles:{col 32}10%{col 42}25%{col 52}50%{col 62}75%{col 72}90%
+{res}{col 27}   86498{col 37}  118905{col 47}  364640{col 57}  401122{col 67}  486761
+
+{txt}{hline}
+{res}momdad14{right:=1 if live with mom, dad at 14}
+{txt}{hline}
+
+{col 19}type:  numeric ({res}byte{txt})
+
+{col 18}range:  [{res}0{txt},{res}1{txt}]{col 55}units:  {res}1
+{col 10}{txt}unique values:  {res}2{col 51}{txt}missing .:  {res}0{txt}/{res}1,013
+
+{txt}{col 13}tabulation:  Freq.  Value
+{col 21}{res}       212{col 33}0
+{col 21}       801{col 33}1
+
+{txt}{hline}
+{res}sinmom14{right:=1 if with single mom at 14}
+{txt}{hline}
+
+{col 19}type:  numeric ({res}byte{txt})
+
+{col 18}range:  [{res}0{txt},{res}1{txt}]{col 55}units:  {res}1
+{col 10}{txt}unique values:  {res}2{col 51}{txt}missing .:  {res}0{txt}/{res}1,013
+
+{txt}{col 13}tabulation:  Freq.  Value
+{col 21}{res}       906{col 33}0
+{col 21}       107{col 33}1
+
+{txt}{hline}
+{res}step14{right:=1 if with step parent at 14}
+{txt}{hline}
+
+{col 19}type:  numeric ({res}byte{txt})
+
+{col 18}range:  [{res}0{txt},{res}1{txt}]{col 55}units:  {res}1
+{col 10}{txt}unique values:  {res}2{col 51}{txt}missing .:  {res}0{txt}/{res}1,013
+
+{txt}{col 13}tabulation:  Freq.  Value
+{col 21}{res}       976{col 33}0
+{col 21}        37{col 33}1
+
+{txt}{hline}
+{res}reg661{right:=1 for region 1, 1966}
+{txt}{hline}
+
+{col 19}type:  numeric ({res}byte{txt})
+
+{col 18}range:  [{res}0{txt},{res}1{txt}]{col 55}units:  {res}1
+{col 10}{txt}unique values:  {res}2{col 51}{txt}missing .:  {res}0{txt}/{res}1,013
+
+{txt}{col 13}tabulation:  Freq.  Value
+{col 21}{res}       971{col 33}0
+{col 21}        42{col 33}1
+
+{txt}{hline}
+{res}reg662{right:=1 for region 2, 1966}
+{txt}{hline}
+
+{col 19}type:  numeric ({res}byte{txt})
+
+{col 18}range:  [{res}0{txt},{res}1{txt}]{col 55}units:  {res}1
+{col 10}{txt}unique values:  {res}2{col 51}{txt}missing .:  {res}0{txt}/{res}1,013
+
+{txt}{col 13}tabulation:  Freq.  Value
+{col 21}{res}       836{col 33}0
+{col 21}       177{col 33}1
+
+{txt}{hline}
+{res}reg663{right:=1 for region 3, 1966}
+{txt}{hline}
+
+{col 19}type:  numeric ({res}byte{txt})
+
+{col 18}range:  [{res}0{txt},{res}1{txt}]{col 55}units:  {res}1
+{col 10}{txt}unique values:  {res}2{col 51}{txt}missing .:  {res}0{txt}/{res}1,013
+
+{txt}{col 13}tabulation:  Freq.  Value
+{col 21}{res}       826{col 33}0
+{col 21}       187{col 33}1
+
+{txt}{hline}
+{res}reg664{right:=1 for region 4, 1966}
+{txt}{hline}
+
+{col 19}type:  numeric ({res}byte{txt})
+
+{col 18}range:  [{res}0{txt},{res}1{txt}]{col 55}units:  {res}1
+{col 10}{txt}unique values:  {res}2{col 51}{txt}missing .:  {res}0{txt}/{res}1,013
+
+{txt}{col 13}tabulation:  Freq.  Value
+{col 21}{res}       944{col 33}0
+{col 21}        69{col 33}1
+
+{txt}{hline}
+{res}reg665{right:=1 for region 5, 1966}
+{txt}{hline}
+
+{col 19}type:  numeric ({res}byte{txt})
+
+{col 18}range:  [{res}0{txt},{res}1{txt}]{col 55}units:  {res}1
+{col 10}{txt}unique values:  {res}2{col 51}{txt}missing .:  {res}0{txt}/{res}1,013
+
+{txt}{col 13}tabulation:  Freq.  Value
+{col 21}{res}       791{col 33}0
+{col 21}       222{col 33}1
+
+{txt}{hline}
+{res}reg666{right:=1 for region 6, 1966}
+{txt}{hline}
+
+{col 19}type:  numeric ({res}byte{txt})
+
+{col 18}range:  [{res}0{txt},{res}1{txt}]{col 55}units:  {res}1
+{col 10}{txt}unique values:  {res}2{col 51}{txt}missing .:  {res}0{txt}/{res}1,013
+
+{txt}{col 13}tabulation:  Freq.  Value
+{col 21}{res}       911{col 33}0
+{col 21}       102{col 33}1
+
+{txt}{hline}
+{res}reg667{right:=1 for region 7, 1966}
+{txt}{hline}
+
+{col 19}type:  numeric ({res}byte{txt})
+
+{col 18}range:  [{res}0{txt},{res}1{txt}]{col 55}units:  {res}1
+{col 10}{txt}unique values:  {res}2{col 51}{txt}missing .:  {res}0{txt}/{res}1,013
+
+{txt}{col 13}tabulation:  Freq.  Value
+{col 21}{res}       903{col 33}0
+{col 21}       110{col 33}1
+
+{txt}{hline}
+{res}reg668{right:=1 for region 8, 1966}
+{txt}{hline}
+
+{col 19}type:  numeric ({res}byte{txt})
+
+{col 18}range:  [{res}0{txt},{res}1{txt}]{col 55}units:  {res}1
+{col 10}{txt}unique values:  {res}2{col 51}{txt}missing .:  {res}0{txt}/{res}1,013
+
+{txt}{col 13}tabulation:  Freq.  Value
+{col 21}{res}       989{col 33}0
+{col 21}        24{col 33}1
+
+{txt}{hline}
+{res}reg669{right:=1 for region 9, 1966}
+{txt}{hline}
+
+{col 19}type:  numeric ({res}byte{txt})
+
+{col 18}range:  [{res}0{txt},{res}1{txt}]{col 55}units:  {res}1
+{col 10}{txt}unique values:  {res}2{col 51}{txt}missing .:  {res}0{txt}/{res}1,013
+
+{txt}{col 13}tabulation:  Freq.  Value
+{col 21}{res}       933{col 33}0
+{col 21}        80{col 33}1
+
+{txt}{hline}
+{res}south66{right:=1 if in south in 1966}
+{txt}{hline}
+
+{col 19}type:  numeric ({res}byte{txt})
+
+{col 18}range:  [{res}0{txt},{res}1{txt}]{col 55}units:  {res}1
+{col 10}{txt}unique values:  {res}2{col 51}{txt}missing .:  {res}0{txt}/{res}1,013
+
+{txt}{col 13}tabulation:  Freq.  Value
+{col 21}{res}       579{col 33}0
+{col 21}       434{col 33}1
+
+{txt}{hline}
+{res}black{right:=1 if black}
+{txt}{hline}
+
+{col 19}type:  numeric ({res}byte{txt})
+
+{col 18}range:  [{res}0{txt},{res}1{txt}]{col 55}units:  {res}1
+{col 10}{txt}unique values:  {res}2{col 51}{txt}missing .:  {res}0{txt}/{res}1,013
+
+{txt}{col 13}tabulation:  Freq.  Value
+{col 21}{res}       755{col 33}0
+{col 21}       258{col 33}1
+
+{txt}{hline}
+{res}smsa{right:=1 in in SMSA, 1976}
+{txt}{hline}
+
+{col 19}type:  numeric ({res}byte{txt})
+
+{col 18}range:  [{res}0{txt},{res}1{txt}]{col 55}units:  {res}1
+{col 10}{txt}unique values:  {res}2{col 51}{txt}missing .:  {res}0{txt}/{res}1,013
+
+{txt}{col 13}tabulation:  Freq.  Value
+{col 21}{res}       277{col 33}0
+{col 21}       736{col 33}1
+
+{txt}{hline}
+{res}south{right:=1 if in south, 1976}
+{txt}{hline}
+
+{col 19}type:  numeric ({res}byte{txt})
+
+{col 18}range:  [{res}0{txt},{res}1{txt}]{col 55}units:  {res}1
+{col 10}{txt}unique values:  {res}2{col 51}{txt}missing .:  {res}0{txt}/{res}1,013
+
+{txt}{col 13}tabulation:  Freq.  Value
+{col 21}{res}       596{col 33}0
+{col 21}       417{col 33}1
+
+{txt}{hline}
+{res}smsa66{right:=1 if in SMSA, 1966}
+{txt}{hline}
+
+{col 19}type:  numeric ({res}byte{txt})
+
+{col 18}range:  [{res}0{txt},{res}1{txt}]{col 55}units:  {res}1
+{col 10}{txt}unique values:  {res}2{col 51}{txt}missing .:  {res}0{txt}/{res}1,013
+
+{txt}{col 13}tabulation:  Freq.  Value
+{col 21}{res}       344{col 33}0
+{col 21}       669{col 33}1
+
+{txt}{hline}
+{res}wage{right:hourly wage in cents, 1976}
+{txt}{hline}
+
+{col 19}type:  numeric ({res}int{txt})
+
+{col 18}range:  [{res}112{txt},{res}2404{txt}]{col 55}units:  {res}1
+{col 10}{txt}unique values:  {res}462{col 51}{txt}missing .:  {res}0{txt}/{res}1,013
+
+{txt}{col 19}mean:{res}{col 26} 586.947
+{txt}{col 15}std. dev:{res}{col 26} 280.513
+
+{txt}{col 12}percentiles:{col 32}10%{col 42}25%{col 52}50%{col 62}75%{col 72}90%
+{res}{col 27}     288{col 37}     393{col 47}     548{col 57}     714{col 67}     919
+
+{txt}{hline}
+{res}enroll{right:=1 if enrolled in school, 1976}
+{txt}{hline}
+
+{col 19}type:  numeric ({res}byte{txt})
+
+{col 18}range:  [{res}0{txt},{res}1{txt}]{col 55}units:  {res}1
+{col 10}{txt}unique values:  {res}2{col 51}{txt}missing .:  {res}0{txt}/{res}1,013
+
+{txt}{col 13}tabulation:  Freq.  Value
+{col 21}{res}       909{col 33}0
+{col 21}       104{col 33}1
+
+{txt}{hline}
+{res}KWW{right:knowledge world of work score}
+{txt}{hline}
+
+{col 19}type:  numeric ({res}byte{txt})
+
+{col 18}range:  [{res}6{txt},{res}56{txt}]{col 55}units:  {res}1
+{col 10}{txt}unique values:  {res}47{col 51}{txt}missing .:  {res}15{txt}/{res}1,013
+
+{txt}{col 19}mean:{res}{col 26} 33.3126
+{txt}{col 15}std. dev:{res}{col 26} 8.86523
+
+{txt}{col 12}percentiles:{col 32}10%{col 42}25%{col 52}50%{col 62}75%{col 72}90%
+{res}{col 27}      22{col 37}      27{col 47}      34{col 57}      40{col 67}      44
+
+{txt}{hline}
+{res}IQ{right:IQ score}
+{txt}{hline}
+
+{col 19}type:  numeric ({res}int{txt})
+
+{col 18}range:  [{res}50{txt},{res}145{txt}]{col 55}units:  {res}1
+{col 10}{txt}unique values:  {res}83{col 51}{txt}missing .:  {res}305{txt}/{res}1,013
+
+{txt}{col 19}mean:{res}{col 26} 103.282
+{txt}{col 15}std. dev:{res}{col 26} 16.0457
+
+{txt}{col 12}percentiles:{col 32}10%{col 42}25%{col 52}50%{col 62}75%{col 72}90%
+{res}{col 27}      82{col 37}      94{col 47}     104{col 57}     115{col 67}     123
+
+{txt}{hline}
+{res}married{right:=1 if married, 1976}
+{txt}{hline}
+
+{col 19}type:  numeric ({res}byte{txt})
+
+{col 18}range:  [{res}1{txt},{res}6{txt}]{col 55}units:  {res}1
+{col 10}{txt}unique values:  {res}6{col 51}{txt}missing .:  {res}3{txt}/{res}1,013
+
+{txt}{col 13}tabulation:  Freq.  Value
+{col 21}{res}       725{col 33}1
+{col 21}         6{col 33}2
+{col 21}         1{col 33}3
+{col 21}        48{col 33}4
+{col 21}        32{col 33}5
+{col 21}       198{col 33}6
+{col 21}         3{col 33}.
+
+{txt}{hline}
+{res}libcrd14{right:=1 if lib. card in home at 14}
+{txt}{hline}
+
+{col 19}type:  numeric ({res}byte{txt})
+
+{col 18}range:  [{res}0{txt},{res}1{txt}]{col 55}units:  {res}1
+{col 10}{txt}unique values:  {res}2{col 51}{txt}missing .:  {res}5{txt}/{res}1,013
+
+{txt}{col 13}tabulation:  Freq.  Value
+{col 21}{res}       342{col 33}0
+{col 21}       666{col 33}1
+{col 21}         5{col 33}.
+
+{txt}{hline}
+{res}exper{right:age - educ - 6}
+{txt}{hline}
+
+{col 19}type:  numeric ({res}byte{txt})
+
+{col 18}range:  [{res}0{txt},{res}23{txt}]{col 55}units:  {res}1
+{col 10}{txt}unique values:  {res}22{col 51}{txt}missing .:  {res}0{txt}/{res}1,013
+
+{txt}{col 19}mean:{res}{col 26} 8.79368
+{txt}{col 15}std. dev:{res}{col 26} 4.03638
+
+{txt}{col 12}percentiles:{col 32}10%{col 42}25%{col 52}50%{col 62}75%{col 72}90%
+{res}{col 27}       4{col 37}       6{col 47}       8{col 57}      11{col 67}      15
+
+{txt}{hline}
+{res}lwage{right:log(wage)}
+{txt}{hline}
+
+{col 19}type:  numeric ({res}float{txt})
+
+{col 18}range:  [{res}4.7184987{txt},{res}7.7848892{txt}]{col 55}units:  {res}1.000e-07
+{col 10}{txt}unique values:  {res}462{col 51}{txt}missing .:  {res}0{txt}/{res}1,013
+
+{txt}{col 19}mean:{res}{col 26} 6.27219
+{txt}{col 15}std. dev:{res}{col 26} .455017
+
+{txt}{col 12}percentiles:{col 32}10%{col 42}25%{col 52}50%{col 62}75%{col 72}90%
+{res}{col 27} 5.66296{col 37} 5.97381{col 47} 6.30628{col 57} 6.57088{col 67} 6.82329
+
+{txt}{hline}
+{res}expersq{right:exper^2}
+{txt}{hline}
+
+{col 19}type:  numeric ({res}int{txt})
+
+{col 18}range:  [{res}0{txt},{res}529{txt}]{col 55}units:  {res}1
+{col 10}{txt}unique values:  {res}22{col 51}{txt}missing .:  {res}0{txt}/{res}1,013
+
+{txt}{col 19}mean:{res}{col 26} 93.6051
+{txt}{col 15}std. dev:{res}{col 26} 82.1411
+
+{txt}{col 12}percentiles:{col 32}10%{col 42}25%{col 52}50%{col 62}75%{col 72}90%
+{res}{col 27}      16{col 37}      36{col 47}      64{col 57}     121{col 67}     225
+{txt}
+{com}. 
+. *Summary Statistics for observations, more than 100 missing values for observations ,average years of schooling 
+. sum
+
+{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+{space 10}id {c |}{res}      1,013    2541.925    1487.952         10       5219
+{txt}{space 6}nearc2 {c |}{res}      1,013    .4461994    .4973426          0          1
+{txt}{space 6}nearc4 {c |}{res}      1,013    .6900296    .4627095          0          1
+{txt}{space 8}educ {c |}{res}      1,013    13.25765    2.685003          2         18
+{txt}{space 9}age {c |}{res}      1,013    28.05133    3.132661         24         34
+{txt}{hline 13}{c +}{hline 57}
+{space 4}fatheduc {c |}{res}        786    10.09542    3.694348          0         18
+{txt}{space 4}motheduc {c |}{res}        891    10.42985    3.311262          0         18
+{txt}{space 6}weight {c |}{res}      1,013    315684.4    169495.9      75607    1693822
+{txt}{space 4}momdad14 {c |}{res}      1,013    .7907206    .4069951          0          1
+{txt}{space 4}sinmom14 {c |}{res}      1,013    .1056269    .3075113          0          1
+{txt}{hline 13}{c +}{hline 57}
+{space 6}step14 {c |}{res}      1,013    .0365252    .1876855          0          1
+{txt}{space 6}reg661 {c |}{res}      1,013     .041461    .1994524          0          1
+{txt}{space 6}reg662 {c |}{res}      1,013    .1747285    .3799223          0          1
+{txt}{space 6}reg663 {c |}{res}      1,013    .1846002    .3881645          0          1
+{txt}{space 6}reg664 {c |}{res}      1,013    .0681145    .2520668          0          1
+{txt}{hline 13}{c +}{hline 57}
+{space 6}reg665 {c |}{res}      1,013     .219151    .4138755          0          1
+{txt}{space 6}reg666 {c |}{res}      1,013     .100691    .3010678          0          1
+{txt}{space 6}reg667 {c |}{res}      1,013    .1085884    .3112757          0          1
+{txt}{space 6}reg668 {c |}{res}      1,013     .023692    .1521629          0          1
+{txt}{space 6}reg669 {c |}{res}      1,013    .0789733    .2698304          0          1
+{txt}{hline 13}{c +}{hline 57}
+{space 5}south66 {c |}{res}      1,013    .4284304    .4950957          0          1
+{txt}{space 7}black {c |}{res}      1,013     .254689    .4359015          0          1
+{txt}{space 8}smsa {c |}{res}      1,013    .7265548    .4459476          0          1
+{txt}{space 7}south {c |}{res}      1,013    .4116486    .4923752          0          1
+{txt}{space 6}smsa66 {c |}{res}      1,013    .6604146    .4738024          0          1
+{txt}{hline 13}{c +}{hline 57}
+{space 8}wage {c |}{res}      1,013    586.9467    280.5131        112       2404
+{txt}{space 6}enroll {c |}{res}      1,013    .1026654    .3036712          0          1
+{txt}{space 9}KWW {c |}{res}        998    33.31263    8.865226          6         56
+{txt}{space 10}IQ {c |}{res}        708    103.2825     16.0457         50        145
+{txt}{space 5}married {c |}{res}      1,010    2.257426    2.066072          1          6
+{txt}{hline 13}{c +}{hline 57}
+{space 4}libcrd14 {c |}{res}      1,008    .6607143    .4737019          0          1
+{txt}{space 7}exper {c |}{res}      1,013    8.793682    4.036381          0         23
+{txt}{space 7}lwage {c |}{res}      1,013     6.27219    .4550171   4.718499   7.784889
+{txt}{space 5}expersq {c |}{res}      1,013    93.60513    82.14111          0        529
+{txt}
+{com}. 
+. *Summary Statistics for observations lived in region 7 in 1966
+. tab south66
+
+   {txt}=1 if in {c |}
+   south in {c |}
+       1966 {c |}      Freq.     Percent        Cum.
+{hline 12}{c +}{hline 35}
+          0 {c |}{res}        579       57.16       57.16
+{txt}          1 {c |}{res}        434       42.84      100.00
+{txt}{hline 12}{c +}{hline 35}
+      Total {c |}{res}      1,013      100.00
+{txt}
+{com}. *Summary Statistics for black
+. tab black
+
+{txt}=1 if black {c |}      Freq.     Percent        Cum.
+{hline 12}{c +}{hline 35}
+          0 {c |}{res}        755       74.53       74.53
+{txt}          1 {c |}{res}        258       25.47      100.00
+{txt}{hline 12}{c +}{hline 35}
+      Total {c |}{res}      1,013      100.00
+{txt}
+{com}. 
+. *Summary Statistics for lwage
+. sum wage
+
+{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+{space 8}wage {c |}{res}      1,013    586.9467    280.5131        112       2404
+{txt}
+{com}. 
+. *Summary Statistics for the average wage for people older than 30
+. sum wage if age>30
+
+{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+{space 8}wage {c |}{res}        256    722.9063    354.5173        180       2404
+{txt}
+{com}. 
+. *Summary Statistics for the average number of years of father’s schooling for people in this sample who are black
+. sum fatheduc if black==1
+
+{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+{space 4}fatheduc {c |}{res}        145    7.510345    3.993253          0         18
+{txt}
+{com}. 
+. *Summary Statistics for the average number of years of father’s schooling for people in this sample who are NOT black
+. sum fatheduc if black==0
+
+{txt}    Variable {c |}        Obs        Mean    Std. Dev.       Min        Max
+{hline 13}{c +}{hline 57}
+{space 4}fatheduc {c |}{res}        641    10.68019    3.360952          0         18
+{txt}
+{com}. 
+. *histogram of hourly wage
+. histogram wage, xtitle(Wage) title(Histogram of Hourly Wage (in Cents, 1976))
+{txt}(bin={res}30{txt}, start={res}112{txt}, width={res}76.4{txt})
+{res}{txt}
+{com}. graph export "C:\Users\bentleylab\Desktop\Exam\A histogram of hourly wage.png", as(png) replace
+{txt}(file C:\Users\bentleylab\Desktop\Exam\A histogram of hourly wage.png written in PNG format)
+
+{com}. *       A bar chart of average IQ score by years of schooling in 1976  
+. 
+. graph bar (mean) IQ, over(educ) title(Average IQ Score by Years of Schooling in 1976)
+{res}{txt}
+{com}. graph export "C:\Users\bentleylab\Desktop\Exam\A bar chart of average IQ score by years of schooling in 1976  .png", as(png) replace
+{txt}(file C:\Users\bentleylab\Desktop\Exam\A bar chart of average IQ score by years of schooling in 1976  .png written in PNG format)
+
+{com}. 
+. *A histogram of years of experience (exper) for people who are married in 1976 and enrolled in school in 1976
+. histogram exper if enroll==1 & married==1, xtitle(Years of Experience) title(Years of Experience) subtitle((for people who are married in 1976 and enrolled in school in 1976))
+{txt}(bin={res}7{txt}, start={res}1{txt}, width={res}2{txt})
+{res}{txt}
+{com}. graph export "C:\Users\bentleylab\Desktop\Exam\A histogram of years of experience (exper) for people who are married in 1976 and enrolled in school in 1976.png", as(png) replace
+{txt}(file C:\Users\bentleylab\Desktop\Exam\A histogram of years of experience (exper) for people who are married in 1976 and enrolled in school in 1976.png written in PNG format)
+
+{com}. 
+. 
+. 
+. log close
+      {txt}name:  {res}<unnamed>
+       {txt}log:  {res}C:\Users\bentleylab\Desktop\Exam\CARD_small.smcl
+  {txt}log type:  {res}smcl
+ {txt}closed on:  {res} 1 Dec 2022, 15:43:29
+{txt}{.-}
+{smcl}
+{txt}{sf}{ul off}

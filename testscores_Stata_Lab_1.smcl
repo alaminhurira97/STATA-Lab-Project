@@ -1,0 +1,172 @@
+{smcl}
+{com}{sf}{ul off}{txt}{.-}
+      name:  {res}<unnamed>
+       {txt}log:  {res}C:\Users\bentleylab\Desktop\HW\testscores.smcl
+  {txt}log type:  {res}smcl
+ {txt}opened on:  {res}22 Nov 2022, 16:29:15
+{txt}
+{com}. 
+. use testscores_data
+{txt}
+{com}. 
+. 
+. set more off
+{txt}
+{com}. 
+. codebook
+
+{txt}{hline}
+{res}student_id{right:(unlabeled)}
+{txt}{hline}
+
+{col 19}type:  numeric ({res}float{txt})
+
+{col 18}range:  [{res}1{txt},{res}500{txt}]{col 55}units:  {res}1
+{col 10}{txt}unique values:  {res}500{col 51}{txt}missing .:  {res}0{txt}/{res}500
+
+{txt}{col 19}mean:{res}{col 26}   250.5
+{txt}{col 15}std. dev:{res}{col 26} 144.482
+
+{txt}{col 12}percentiles:{col 32}10%{col 42}25%{col 52}50%{col 62}75%{col 72}90%
+{res}{col 27}    50.5{col 37}   125.5{col 47}   250.5{col 57}   375.5{col 67}   450.5
+
+{txt}{hline}
+{res}gender{right:1=female, 2=male}
+{txt}{hline}
+
+{col 19}type:  numeric ({res}float{txt})
+{ralign 22:label}:  {res:gender1}
+
+{col 18}range:  [{res}1{txt},{res}2{txt}]{col 55}units:  {res}1
+{col 10}{txt}unique values:  {res}2{col 51}{txt}missing .:  {res}0{txt}/{res}500
+
+{txt}{col 13}tabulation:  Freq.   Numeric  Label
+{col 21}{res}       243{col 33}       1{col 43}{txt}female
+{col 21}{res}       257{col 33}       2{col 43}{txt}male
+
+{txt}{hline}
+{res}race{right:1=white, 2=black, 3=asian, 4=other}
+{txt}{hline}
+
+{col 19}type:  numeric ({res}float{txt})
+{ralign 22:label}:  {res:race1}
+
+{col 18}range:  [{res}1{txt},{res}4{txt}]{col 55}units:  {res}1
+{col 10}{txt}unique values:  {res}4{col 51}{txt}missing .:  {res}0{txt}/{res}500
+
+{txt}{col 13}tabulation:  Freq.   Numeric  Label
+{col 21}{res}        93{col 33}       1{col 43}{txt}white
+{col 21}{res}       169{col 33}       2{col 43}{txt}black
+{col 21}{res}       161{col 33}       3{col 43}{txt}asian
+{col 21}{res}        77{col 33}       4{col 43}{txt}other
+
+{txt}{hline}
+{res}math_score{right:percent of questions correct on 4th grade math test}
+{txt}{hline}
+
+{col 19}type:  numeric ({res}float{txt})
+
+{col 18}range:  [{res}57{txt},{res}100{txt}]{col 55}units:  {res}1
+{col 10}{txt}unique values:  {res}40{col 51}{txt}missing .:  {res}0{txt}/{res}500
+
+{txt}{col 19}mean:{res}{col 26}  81.464
+{txt}{col 15}std. dev:{res}{col 26}  6.8245
+
+{txt}{col 12}percentiles:{col 32}10%{col 42}25%{col 52}50%{col 62}75%{col 72}90%
+{res}{col 27}      73{col 37}      77{col 47}      82{col 57}      86{col 67}      90
+
+{txt}{hline}
+{res}reading_score{right:percent of questions correct on 4th grade reading test}
+{txt}{hline}
+
+{col 19}type:  numeric ({res}float{txt})
+
+{col 18}range:  [{res}25{txt},{res}100{txt}]{col 55}units:  {res}1
+{col 10}{txt}unique values:  {res}64{col 51}{txt}missing .:  {res}0{txt}/{res}500
+
+{txt}{col 19}mean:{res}{col 26}  73.806
+{txt}{col 15}std. dev:{res}{col 26} 12.8346
+
+{txt}{col 12}percentiles:{col 32}10%{col 42}25%{col 52}50%{col 62}75%{col 72}90%
+{res}{col 27}      55{col 37}      66{col 47}      75{col 57}      83{col 67}      89
+
+{txt}{hline}
+{res}hh_income{right:household income (in dollars)}
+{txt}{hline}
+
+{col 19}type:  numeric ({res}float{txt})
+
+{col 18}range:  [{res}10815{txt},{res}119486{txt}]{col 55}units:  {res}1
+{col 10}{txt}unique values:  {res}496{col 51}{txt}missing .:  {res}0{txt}/{res}500
+
+{txt}{col 19}mean:{res}{col 26} 66147.4
+{txt}{col 15}std. dev:{res}{col 26} 30889.3
+
+{txt}{col 12}percentiles:{col 32}10%{col 42}25%{col 52}50%{col 62}75%{col 72}90%
+{res}{col 27}   23713{col 37} 40488.5{col 47} 65342.5{col 57}   93137{col 67}  109763
+{txt}
+{com}. 
+. *Summary Statistics of race
+. tab race
+
+   {txt}1=white, {c |}
+   2=black, {c |}
+   3=asian, {c |}
+    4=other {c |}      Freq.     Percent        Cum.
+{hline 12}{c +}{hline 35}
+      white {c |}{res}         93       18.60       18.60
+{txt}      black {c |}{res}        169       33.80       52.40
+{txt}      asian {c |}{res}        161       32.20       84.60
+{txt}      other {c |}{res}         77       15.40      100.00
+{txt}{hline 12}{c +}{hline 35}
+      Total {c |}{res}        500      100.00
+{txt}
+{com}. 
+. *histogram of household income
+. histogram hh_income, ytitle(Density) xtitle(HOUSEHOLD INCOME (DOLLARS)) title(Histogram of Household Income)
+{txt}(bin={res}22{txt}, start={res}10815{txt}, width={res}4939.5909{txt})
+{res}{txt}
+{com}. graph export "C:\Users\bentleylab\Desktop\HW\histogram_household_income.png", as(png) replace
+{txt}(file C:\Users\bentleylab\Desktop\HW\histogram_household_income.png written in PNG format)
+
+{com}. 
+. *bar chart of average math test scores by race
+. graph bar (mean) math_score, over(race) ytitle(Math Score (in percent)) title(Average Math Test Scores of Students by Race)
+{res}{txt}
+{com}. graph export "C:\Users\bentleylab\Desktop\HW\bar_chart_average_math_test_scores_by_race.png", as(png) replace
+{txt}(file C:\Users\bentleylab\Desktop\HW\bar_chart_average_math_test_scores_by_race.png written in PNG format)
+
+{com}. 
+. *bar chart of average reading test scores by gender
+. graph bar (mean) reading_score, over(gender) ytitle(Reading Score (in percent)) title(Average Reading Test Scores of Students by Gender)
+{res}{txt}
+{com}. graph export "C:\Users\bentleylab\Desktop\HW\bar_chart_average_reading_test_scores_by_gender.png", as(png) replace
+{txt}(file C:\Users\bentleylab\Desktop\HW\bar_chart_average_reading_test_scores_by_gender.png written in PNG format)
+
+{com}. 
+. *histogram of math test scores for Black female students
+. histogram math_score if race==2&gender==1, ytitle(Density) xtitle(Math Scores (in percent)) title(Histogram of Math Test Scores for Black Female Students)
+{txt}(bin={res}8{txt}, start={res}76{txt}, width={res}3{txt})
+{res}{txt}
+{com}. graph export "C:\Users\bentleylab\Desktop\HW\histogram_math_test_scores_for_Black_female_students.png", as(png) replace
+{txt}(file C:\Users\bentleylab\Desktop\HW\histogram_math_test_scores_for_Black_female_students.png written in PNG format)
+
+{com}. 
+. *histogram of reading test scores for students from a household with an income less than $50,000.
+. histogram reading_score if hh_income<50000, ytitle(Density) xtitle(Reading Test Scores for Students (in percent)) title(Histogram of Reading Test Scores) subtitle(for Students with HH Income < $50000)
+{txt}(bin={res}13{txt}, start={res}39{txt}, width={res}4.6923077{txt})
+{res}{txt}
+{com}. graph export "C:\Users\bentleylab\Desktop\HW\histogram_reading_test_scores_for_students_from_a_household_with_an_income_less_than_$50,000.png", as(png) replace
+{txt}(file C:\Users\bentleylab\Desktop\HW\histogram_reading_test_scores_for_students_from_a_household_with_an_income_less_than_$50,000.png written in PNG format)
+
+{com}. 
+. 
+. 
+. log close
+      {txt}name:  {res}<unnamed>
+       {txt}log:  {res}C:\Users\bentleylab\Desktop\HW\testscores.smcl
+  {txt}log type:  {res}smcl
+ {txt}closed on:  {res}22 Nov 2022, 16:29:16
+{txt}{.-}
+{smcl}
+{txt}{sf}{ul off}
